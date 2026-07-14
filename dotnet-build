@@ -61,6 +61,7 @@ done
 build_sdk() {
     local sdk_build_flags=(
         --source-only
+        --clean-while-building
         --configuration Release
         --use-mono-runtime
         --with-system-libs "+zlib+"
